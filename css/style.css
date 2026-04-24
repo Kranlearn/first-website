@@ -1,0 +1,124 @@
+*{
+   box-sizing: border-box;
+   font-family: "Open Sans", sans-serif;
+}
+
+.open-sans-uniquifier {
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+:root{
+    --bg: #fafaf8;
+    --surface: #ffffff;
+    --border: #e8e8e4;
+    --text: #1a1a18;
+    --muted: #8a8a80;
+    --accent: #1a1a18;
+    --shadow: 0 4px 32px rgba(0, 0, 0, 0.06);
+}
+::-webkit-scrollbar {
+  display: none;
+}
+header{
+  width: 100%;
+  height: 50vh;
+}
+.logo{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  font-family: "Open Sans", sans-serif;
+  font-size: 22px;
+  font-weight: 600;
+  letter-spacing: 0.2rem;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  font-size: 1.3rem;
+  color: white;
+  width: 100;
+ 
+}
+.li{
+  list-style: none;
+  margin: 0 1rem;
+}
+li {
+  list-style: circle;
+}
+footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+main {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  border: 2px solid rgba(0, 0, 0, 0.7);
+  border-right: none;
+  border-left: none;
+  color: rgb(21, 21, 21);
+  width: 95%;
+  margin: auto;
+}
+section {
+  width: 90%;
+  margin: auto;
+}
+.card:hover {
+    background-color: rgb(153, 153, 153);
+    box-shadow: 0 2px 20px 0 rgba(13, 13, 13, 0.7);
+  transform: scale(1.05);
+}
+
+.custom-title {
+  margin: 0;
+}
+@media screen and (max-width: 1350px) {
+  .title {
+    font-size: 3rem;
+  }
+  .subtitle {
+    font-size: 1rem;
+  }
+  span {
+    margin-right: 40%;
+  }
+}
+
+form {
+    background-color: #cdb6a7;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 14px 16px;
+    
+}
+
+form:hover{
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+button{
+  border-radius: 0%;
+  border: solid;
+}
+em{
+  color: #a5b4fc;
+}
+.header, .body, 
+.nav, .main, article, .footer{
+  @media screen and (min-widht: 80rem) {
+   
+  }
+}
